@@ -1,0 +1,7 @@
+public class Smp2 {
+	  public static void main(String[] args)
+	   {
+		  System.out.println("This is a simple example!");
+		  System.out.println("A documentation about this program is requested!");
+	   }
+}
