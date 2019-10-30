@@ -5,7 +5,7 @@ class Rectangle{
 	}		
 	public Rectangle(int width,int height)
 	{
-      this.width =width;
+                  this.width =width;
 	  this.height =height;
 	}	
 	public int GetArea()
@@ -27,11 +27,11 @@ class Square extends Rectangle {
 	}
 	public Square(int bianchang)
 	{
-      this.bianchang = bianchang;
+                this.bianchang = bianchang;
 	}
-	public int GetArea(int width,int height)
+	public int GetArea()
 	{
-		area = width*height;
+		area = bianchang*bianchang;
 		return area;
 	}
 	 public int GetPermeter(int bianchang)
@@ -43,7 +43,12 @@ class Square extends Rectangle {
 }
 class Area {
 	public static void main(String[] args){
-		Rectangle A = new Rectangle(10,5);
-		System.out.println("闈㈢Н涓猴細"A.GetArea());
+		Rectangle R = new Rectangle(10,5);
+		Square S = new Square(5);
+		Rectangle [] arr = new Rectangle[2];
+		arr[0] = R;
+		arr[1] = S;
+        //System.out.println("面积和为："+S.GetArea());              
+	    System.out.println("面积和为："+(arr[0].GetArea()+arr[1].GetArea()));
 	}
 }
