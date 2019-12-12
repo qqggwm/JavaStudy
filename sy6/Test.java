@@ -35,7 +35,7 @@ class A{
     	System.out.println("sum="+num1+"+"+num2+"="+sum);
     }
  }
- public class test{
+class Test{
  	public static void main (String arg[]){
  		B m=new B();
         m.sum1();//30
